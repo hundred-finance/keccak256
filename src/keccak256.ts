@@ -1,8 +1,6 @@
 import BN from 'bn.js'
-import buffer from 'buffer'
 import createKeccakHash from 'keccak'
-
-const Buffer = buffer.Buffer
+import { Buffer } from 'buffer'
 
 function keccak256 (value: Buffer | BN | string | number) {
   value = toBuffer(value)
