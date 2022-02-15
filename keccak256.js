@@ -6,6 +6,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var __importDefault = undefined && undefined.__importDefault || function (mod) {
     return mod && mod.__esModule ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var bn_js_1 = __importDefault(require("bn.js"));
 var keccak_1 = __importDefault(require("keccak"));
 var buffer_1 = require("buffer");
@@ -79,7 +80,7 @@ function intToHex(i) {
 if (typeof window !== 'undefined') {
     window.keccak256 = keccak256;
 }
-module.exports = keccak256;
+exports.default = keccak256;
 
 },{"bn.js":3,"buffer":5,"keccak":9}],2:[function(require,module,exports){
 'use strict'
